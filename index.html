@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoMarket</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Malyk shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="goHome()">
+    <nav class="navbar">
+        <div class="logo">AutoMarket</div>
+        <div class="nav-links">
+          <a href="#" onclick="goHome()">Главная</a>
+          <a href="#" onclick="goAdmin()">Админка</a>
+          <a href="#" onclick="goCart()">Корзина</a>
+          <a href="#" id="login-link" onclick="goLogin()">Войти</a>
+        </div>
+      </nav>
+  </nav>
+
+  <main id="main-content" class="content"></main>
+
+  <footer class="footer">
+    &copy; 2025 Malyk shop. Все права защищены.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
