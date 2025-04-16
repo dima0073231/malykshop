@@ -4,7 +4,7 @@ export default function CarDetails({ cars }) {
   const { id } = useParams();
   const car = cars.find(c => c.id === id);
 
-  if (!car) return <div className="p-6">Машина не найдена</div>;
+  if (!car) return <div className="p-6">Товар не найдена</div>;
 
   return (
     <div className="p-6 max-w-3xl mx-auto">
